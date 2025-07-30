@@ -26,6 +26,8 @@ chmod 755 package/base-files/files/bin/coremark.sh
 # 复制 Orange pi 5 Plus dts设备树文件到指定目录下
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588-orangepi-5-plus.dts target/linux/rockchip/dts/rk3588/rk3588-orangepi-5-plus.dts
 
+# 复制 WXY OEC dts设备树文件到指定目录下
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-wxy-oec-turbo-4g.dts target/linux/rockchip/dts/rk3566/rk3566-wxy-oec-turbo-4g.dts
 
 # 定时限速插件
 git clone --depth=1 https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
